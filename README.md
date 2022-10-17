@@ -18,5 +18,4 @@ https://www.microsoftazurepass.com/Home/HowTo?Length=5
 20	Sunil Likky	QFUCGPVX3DK8O2DRRS
 21	Venkatachalam, Deepiga	QH8HHE3H5ILEFVGSBB
 22	Shashanka Shekhar Mishra	QMMOKHLL6JKJPMIFBD
-24	Amaladoss, Vijay	QVGDSRD97F20KFM9EP
 </pr>
