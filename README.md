@@ -7,10 +7,8 @@ https://www.microsoftazurepass.com/Home/HowTo?Length=5
 
 
 <pre>
-2	Eshwar Chowdayya Chowdam	QKI5F6WTGGMCDTV7N6
 3	Sreekanth Adusumalli	QD8C49DHS2KWBCWIHL
 11	Nandagiri, Kishore	QFMKME6SMHJ9IQYDKP
 19	Shravan Kumar	QTO61I6U4IJPO14RQR
-21	Venkatachalam, Deepiga	QH8HHE3H5ILEFVGSBB
 22	Shashanka Shekhar Mishra	QMMOKHLL6JKJPMIFBD
 </pr>
