@@ -251,3 +251,19 @@ jegan@tektutor:~/terraform-oct-2022$ <b>docker ps</b>
 CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS      NAMES
 7bb941f77d46   bitnami/mysql:latest   "/opt/bitnami/script…"   38 seconds ago   Up 35 seconds   3306/tcp   mysql
 </pre>
+
+## Getting inside the mysql db server container
+Type 'root' as the password without quotes when prompted.
+```
+docker exec -it mysql sh
+mysql -u root -p
+SHOW DATABASES
+CREATE DATABASE tektutor;
+USE tektutor;
+CREATE TABLE training ( id INT NOT NULL, name VARCHAR(100) NOT NULL, duration VARCHAR(200) NOT NULL, PRIMARY KEY(id) );
+INSERT INTO training VALUES (1, "DevOps", "5 Days");
+INSERT INTO training VALUES (2, "Terraform", "5 Days");
+SELECT * FROM training;
+exit
+exit
+```
