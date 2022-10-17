@@ -352,3 +352,81 @@ Global options (use these before the subcommand, if any):
   -help         Show this help output, or the help for a specified subcommand.
   -version      An alias for the "version" subcommand.
 </pre>
+
+## Install Microsoft Visual Studio code editor
+```
+sudo snap install code --classic
+```
+
+## Creating a docker container using Terraform script
+
+Create a folder named lab1 under your home directory
+```
+mkdir -p ~/terraform-oct-2022/Day1/lab1
+cd ~/terraform-oct-2022/Day1/lab1
+```
+
+First create a file name 'main.tf' with the below content
+<pre>
+terraform {
+  required_providers {
+    docker = {
+        source = "kreuzwerker/docker"
+        version = "~> 2.13.0"
+    }
+  }
+}
+
+provider "docker" {}
+
+resource "docker_image" "nginx" {
+  name = "nginx:latest"
+  keep_locally = false
+}
+
+resource "docker_container" "nginx" {
+    image = docker_image.nginx.latest
+    name = "my-nginx"
+    ports {
+        internally = 80
+        external   = 8080
+    }
+}
+</pre>
+
+Install the providers if it is not present on your local folder
+```
+cd ~/terraform-oct-2022/Day1/lab1
+teraform init
+```
+
+Expected output
+<pre>
+jegan@tektutor:~/terraform-oct-2022/Day1/lab1$ <b>terraform init</b>
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Finding kreuzwerker/docker versions matching "~> 2.13.0"...
+- Installing kreuzwerker/docker v2.13.0...
+- Installed kreuzwerker/docker v2.13.0 (self-signed, key ID 24E54F214569A8A5)
+
+Partner and community providers are signed by their developers.
+If you'd like to know more about provider signing, you can read about it here:
+https://www.terraform.io/docs/cli/plugins/signing.html
+
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+</pre>
