@@ -11,7 +11,6 @@ https://www.microsoftazurepass.com/Home/HowTo?Length=5
 3	Sreekanth Adusumalli	QD8C49DHS2KWBCWIHL
 9	Ravi Shandilya	Q60WTXFZBVY5QF0KXD
 11	Nandagiri, Kishore	QFMKME6SMHJ9IQYDKP
-13	Kathiroju, Aravind	QGMZH5DG9PC3TJ9RQC
 17	Avinash Challa	Q2EI70D4B7UEF7IDV8
 19	Shravan Kumar	QTO61I6U4IJPO14RQR
 20	Sunil Likky	QFUCGPVX3DK8O2DRRS
