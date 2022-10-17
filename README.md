@@ -1,1 +1,6 @@
-# I'll maintain all the sample code and lab instructions for this training here.
+# Activating Azure Pass (Please try this from RPS Lab Machine)
+Please note down your Azure Pass somewhere and try to activate today itself.  It is possible the Azure pass will expire if not activated today.
+
+<pre>
+https://www.microsoftazurepass.com/Home/HowTo?Length=5
+</per>
