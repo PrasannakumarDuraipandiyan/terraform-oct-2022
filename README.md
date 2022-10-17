@@ -8,6 +8,5 @@ https://www.microsoftazurepass.com/Home/HowTo?Length=5
 
 <pre>
 3	Sreekanth Adusumalli	QD8C49DHS2KWBCWIHL
-19	Shravan Kumar	QTO61I6U4IJPO14RQR
 22	Shashanka Shekhar Mishra	QMMOKHLL6JKJPMIFBD
 </pr>
