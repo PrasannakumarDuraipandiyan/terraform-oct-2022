@@ -545,3 +545,81 @@ docker_container.nginx: Creation complete after 1s [id=1a5051dc83851fbfc4ca64d15
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 </pre>
+
+## Show the current state
+```
+terraform show
+```
+
+Expected output
+<pre>
+jegan@tektutor:~/terraform-oct-2022/Day1/lab1$ terraform show
+# docker_container.nginx:
+resource "docker_container" "nginx" {
+    attach            = false
+    command           = [
+        "nginx",
+        "-g",
+        "daemon off;",
+    ]
+    cpu_shares        = 0
+    entrypoint        = [
+        "/docker-entrypoint.sh",
+    ]
+    env               = []
+    gateway           = "172.17.0.1"
+    hostname          = "1a5051dc8385"
+    id                = "1a5051dc83851fbfc4ca64d15f76794d50aa1a1637cc8398b77b4aced22f48c2"
+    image             = "sha256:51086ed63d8cba3a6a3d94ecd103e9638b4cb8533bb896caf2cda04fb79b862f"
+    init              = false
+    ip_address        = "172.17.0.3"
+    ip_prefix_length  = 16
+    ipc_mode          = "private"
+    log_driver        = "json-file"
+    logs              = false
+    max_retry_count   = 0
+    memory            = 0
+    memory_swap       = 0
+    must_run          = true
+    name              = "my-nginx"
+    network_data      = [
+        {
+            gateway                   = "172.17.0.1"
+            global_ipv6_address       = ""
+            global_ipv6_prefix_length = 0
+            ip_address                = "172.17.0.3"
+            ip_prefix_length          = 16
+            ipv6_gateway              = ""
+            network_name              = "bridge"
+        },
+    ]
+    network_mode      = "default"
+    privileged        = false
+    publish_all_ports = false
+    read_only         = false
+    remove_volumes    = true
+    restart           = "no"
+    rm                = false
+    security_opts     = []
+    shm_size          = 64
+    start             = true
+    stdin_open        = false
+    tty               = false
+
+    ports {
+        external = 8080
+        internal = 80
+        ip       = "0.0.0.0"
+        protocol = "tcp"
+    }
+}
+
+# docker_image.nginx:
+resource "docker_image" "nginx" {
+    id           = "sha256:51086ed63d8cba3a6a3d94ecd103e9638b4cb8533bb896caf2cda04fb79b862fnginx:latest"
+    keep_locally = false
+    latest       = "sha256:51086ed63d8cba3a6a3d94ecd103e9638b4cb8533bb896caf2cda04fb79b862f"
+    name         = "nginx:latest"
+    repo_digest  = "nginx@sha256:2f770d2fe27bc85f68fd7fe6a63900ef7076bc703022fe81b980377fe3d27b70"
+}
+</pre>
