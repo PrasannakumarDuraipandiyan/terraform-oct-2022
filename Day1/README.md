@@ -246,9 +246,8 @@ Status: Downloaded newer image for bitnami/mysql:latest
 </pre>
 
 Listing the running containers
-</pre>
+<pre>
 jegan@tektutor:~/terraform-oct-2022$ <b>docker ps</b>
 CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS      NAMES
 7bb941f77d46   bitnami/mysql:latest   "/opt/bitnami/script…"   38 seconds ago   Up 35 seconds   3306/tcp   mysql
 </pre>
-
