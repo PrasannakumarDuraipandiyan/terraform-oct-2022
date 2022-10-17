@@ -1,1 +1,4 @@
-# I'll maintain all the sample code and lab instructions for this training here.
+# Activating Azure Pass
+<pre>
+https://www.microsoftazurepass.com/Home/HowTo?Length=5
+</per>
