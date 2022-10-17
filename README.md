@@ -18,8 +18,6 @@ https://www.microsoftazurepass.com/Home/HowTo?Length=5
 11	Nandagiri, Kishore	QFMKME6SMHJ9IQYDKP
 12	Garimella Sesha, Giridhar Kumar	QRLSYHQ9B9DFWWDCDL
 13	Kathiroju, Aravind	QGMZH5DG9PC3TJ9RQC
-14	Duddukuri Lakshmi Venkata Viswanath	QU3FIHGBS8WOODPIGI
-15	Jannu, Saimanikanta	QK75JO5CZWGMPNM5B1
 16	Ganesh balasubramanian	Q4NKSEM4XI1C92WPSR
 17	Avinash Challa	Q2EI70D4B7UEF7IDV8
 19	Shravan Kumar	QTO61I6U4IJPO14RQR
