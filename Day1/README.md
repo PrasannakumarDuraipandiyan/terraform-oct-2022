@@ -225,3 +225,30 @@ Examples:
 2. Vagrant
 3. Kubernetes/OpenShift/Docker SWARM
 4. Ansible/Puppet/Chef/Salt(SaltStack)
+
+## Docker Commands
+
+## Create a mysql db server container
+```
+docker run -d --name mysql --hostname mysql bitnami/mysql:latest
+```
+
+Expected output
+<pre>
+jegan@tektutor:~/terraform-oct-2022$ <b>docker run -d --name mysql --hostname mysql -e MYSQL_ROOT_PASSWORD=root bitnami/mysql:latest</b>
+Unable to find image 'bitnami/mysql:latest' locally
+latest: Pulling from bitnami/mysql
+1d8866550bdd: Pull complete 
+1b8c0f27c1e5: Pull complete 
+Digest: sha256:fcb08fe71a17b393852db74371be05de6bb0484aa59b0f24aa6a073174d30f48
+Status: Downloaded newer image for bitnami/mysql:latest
+7bb941f77d465c1c34f07f22c46e63f6f12dd87dcecb45a52e5fd813739e293f
+</pre>
+
+Listing the running containers
+</pre>
+jegan@tektutor:~/terraform-oct-2022$ <b>docker ps</b>
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS      NAMES
+7bb941f77d46   bitnami/mysql:latest   "/opt/bitnami/script…"   38 seconds ago   Up 35 seconds   3306/tcp   mysql
+</pre>
+
