@@ -623,3 +623,21 @@ resource "docker_image" "nginx" {
     repo_digest  = "nginx@sha256:2f770d2fe27bc85f68fd7fe6a63900ef7076bc703022fe81b980377fe3d27b70"
 }
 </pre>
+
+Verify if there is nginx:latest docker image and also check if my-nginx container is running
+```
+docker images
+docker ps
+```
+
+Expected output
+<pre>
+jegan@tektutor:~/terraform-oct-2022/Day1/lab1$ <b>docker images</b>
+REPOSITORY      TAG       IMAGE ID       CREATED       SIZE
+bitnami/mysql   latest    2bb35ed2ae49   2 days ago    504MB
+<b>nginx           latest    51086ed63d8c   12 days ago   142MB</b>
+jegan@tektutor:~/terraform-oct-2022/Day1/lab1$ <b>docker ps</b>
+CONTAINER ID   IMAGE                  COMMAND                  CREATED             STATUS             PORTS                  NAMES
+<b>1a5051dc8385   51086ed63d8c           "/docker-entrypoint.…"   5 minutes ago       Up 5 minutes       0.0.0.0:8080->80/tcp   my-nginx</b>
+7bb941f77d46   bitnami/mysql:latest   "/opt/bitnami/script…"   About an hour ago   Up About an hour   3306/tcp               mysql
+</pre>
